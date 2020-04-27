@@ -2,6 +2,10 @@ import React from 'react';
 
 const Weather = props => (
     <div className="weather__info">
+        { props.time_day && <p className="weather__key">Time: 
+            <span className="weather__value"> { props.time_day } </span>
+        </p>
+        }
         { props.city && props.country && <p className="weather__key">Location: 
             <span className="weather__value"> { props.city }, { props.country }</span>
         </p>

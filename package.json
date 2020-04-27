@@ -8,9 +8,11 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "zipcode-to-timezone": "0.0.9"
   },
   "homepage": "https://bransonperkins.github.io/weather-app-react/",
   "scripts": {
