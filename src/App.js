@@ -21,10 +21,10 @@ class App extends React.Component {
   getWeather = async (e) => {
     e.preventDefault();
     const zip_code = e.target.elements.zipcode.value;
-    const weather_Api = await fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${zip_code}&appid=${API_KEY}&units=imperial`);
+    const weather_Api = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip_code}&appid=${API_KEY}&units=imperial`);
     const data = await weather_Api.json();
     var icon_code = data.weather[0].icon;
-    var iconurl = "http://openweathermap.org/img/w/" + icon_code + ".png";
+    var iconurl = "https://openweathermap.org/img/w/" + icon_code + ".png";
     if (zip_code) {
       this.setState({
         temperature: Math.round(data.main.temp),
